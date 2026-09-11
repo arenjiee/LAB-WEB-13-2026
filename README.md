@@ -1,148 +1,105 @@
-# 💻 LAB-WEB-13-2026
+# LAB-WEB-13-2026
 
-Selamat datang di repositori **LAB-WEB-13-2026** 👋
+# Repositori Tugas Pemrograman Website 2026
 
-Repositori ini digunakan sebagai tempat pengumpulan tugas praktikum untuk mata kuliah **Praktikum Pemrograman Web Tahun 2026**. Silakan ikuti panduan berikut untuk melakukan pengumpulan tugas melalui GitHub.
+## Requirements:
+1. Buat akun GitHub (https://github.com/)
+2. Download Git (https://git-scm.com/)
 
----
+## Alur pengumpulan tugas ke repositori ini:
 
-## 📥 Alur Pengumpulan Tugas
+1. **Fork** repositori ini
 
-### 1. Fork Repositori
+2. **Clone** repositori hasil **fork** anda
 
-Klik tombol **Fork** yang berada di bagian kanan atas halaman repositori untuk membuat salinan repositori ini ke akun GitHub pribadi.
+   ```sh
 
----
+   git clone https://github.com/YOUR_USERNAME/LAB-WEB-13-2026.git
 
-### 2. Salin URL Repositori
+   ```
 
-Setelah melakukan fork, buka repositori hasil fork pada akun GitHub masing-masing.
+3. Setelah anda **clone**, masuk ke folder hasil **clone** tersebut lalu buat **branch** dengan nama **NIM** anda
 
-Klik tombol **Code**, kemudian salin URL repositori tersebut.
+   ```sh
 
----
+   cd LAB-WEB-13-2026
+   git branch NIM_ANDA
+   git checkout NIM_ANDA
+   git config user.name USERNAME_GITHUB
+   git config user.email EMAIL_GITHUB
 
-### 3. Buka Terminal
+   ```
 
-Buka **Terminal**, **Git Bash**, atau **Command Prompt** pada folder atau lokasi yang ingin digunakan untuk menyimpan repository.
+4. Setelah anda pindah ke **branch** yang telah anda buat, buat sebuah folder dengan nama **NIM** anda dan masuk ke folder tersebut.
+   ```sh
 
----
+   mkdir NIM_ANDA
+   cd NIM_ANDA
 
-### 4. Clone Repositori
-
-Clone repositori hasil fork menggunakan URL yang telah disalin sebelumnya.
-
-```bash
-git clone <url-repositori>
-```
-
----
-
-### 5. Masuk ke Folder Repository
-
-Setelah proses clone selesai, masuk ke folder repository.
-
-```bash
-cd LAB-WEB-13-2026
-```
-
----
-
-### 6. Buat Branch Baru
-
-Buat branch baru menggunakan **NIM masing-masing**.
-
-```bash
-git checkout -b H07125xxxxx
-```
-
-> **Catatan:** Sesuaikan nama branch dengan NIM masing-masing.
-
----
-
-### 7. Masuk ke Folder Mahasiswa
-
-Masuk ke folder sesuai dengan NIM masing-masing.
-
-```bash
-cd H07125xxxxx
-```
-
----
-
-### 8. Kerjakan Tugas
-
-Kerjakan atau tambahkan file tugas sesuai dengan instruksi yang telah diberikan.
-
-Pastikan seluruh file tugas disimpan pada folder yang sesuai.
-
----
-
-### 9. Tambahkan Perubahan
-
-Setelah tugas selesai, tambahkan seluruh file atau perubahan ke Git.
-
-```bash
-git add .
-```
-
-Untuk melihat status perubahan, gunakan perintah:
-
-```bash
-git status
-```
-
----
-
-### 10. Commit Perubahan
-
-Simpan perubahan dengan membuat commit.
-
-Gunakan pesan commit yang jelas dan sesuai dengan tugas yang dikumpulkan.
-
-```bash
-git commit -m "Task 1: HTML as Skeleton"
-```
-
----
-
-### 11. Push ke GitHub
-
-Kirim branch yang telah dibuat ke repositori GitHub.
-
-```bash
-git push -u origin H07125xxxxx
-```
-
-> **Catatan:** Ganti `H07125xxxxx` dengan NIM masing-masing.
-
----
-
-### 12. Buat Pull Request
-
-Setelah proses push berhasil, buka repositori hasil fork pada akun GitHub.
-
-Selanjutnya, buat **Pull Request** dari branch pribadi menuju repositori utama **LAB-WEB-13-2026**.
-
-Pastikan sebelum membuat Pull Request bahwa:
-
-- [ ] File tugas telah berada pada folder yang benar.
-- [ ] Seluruh perubahan telah ditambahkan menggunakan `git add`.
-- [ ] Perubahan telah di-commit.
-- [ ] Branch menggunakan NIM masing-masing.
-- [ ] Branch telah berhasil di-push ke GitHub.
-
----
-
-## 📌 Ketentuan Tambahan
-
-- ⏳ Asistensi tugas maksimal dilakukan **2 minggu setelah tugas diberikan**.
-- 📝 Gunakan pesan commit yang jelas dan mudah dipahami.
-- 📂 Pastikan struktur folder sesuai dengan ketentuan yang telah diberikan.
-- 💬 Jika terdapat kendala, silakan menghubungi asisten melalui **Grup Besar Asistensi** atau **Private Chat**.
-
----
+   ```
 
 
-### 💻 LAB-WEB-13-2026
+5. Didalam folder tersebut, buat sebuah folder dengan nama **Praktikum-n**, **n** = praktikum keberapa
+   ```sh
 
+   mkdir "Praktikum-n"
+   cd "Praktikum-n"
+   
+   CATATAN: n DI SINI ADALAH NOMOR PRAKTIKUM KE BERAPA
+   CONTOH: Praktikum-1
+
+   ```
+
+7. Semua _file_ untuk tugas praktikum ke-**n**, disimpan kedalam folder **Praktikum-n**
+8. Setiap membuat _file_ atau melakukan perubahan, lakukan proses **commit** dengan pesan yang deskriptif
+
+   ```sh
+   
+   git add . #perintah ini memilih seluruh file sekaligus
+   
+   git status untuk mengecek apakah file sudah ter add atau tidak.
+   Jika file yang ingin di add sudah berwarna hijau lanjut ke commit.
+   Jika file yang ingin di add berwarna merah lakukan add terlebih dahulu
+   
+   git commit -m "pesan mengenai penambahan atau perubahan apa yang anda lakukan"
+   
+   ```
+
+8. Setelah asistensi dan tugas anda disetujui, **push** seluruh _file_ jawaban yang telah anda buat
+
+   ```sh
+
+   # pastikan proses commit telah selesai terhadap setiap file
+   git push origin NIM_ANDA
+
+   ```
+   
+   Jika sebelumnya anda belum pernah menghubungkan Git di komputer anda dengan akun GitHub anda, maka anda akan diminta untuk mengisi username dan password untuk
+   melakukan push ke repo GitHub anda.
+   ```sh
+
+   # username = username anda
+   # password = persocal access token anda
+
+   ```
+   
+   Cara membuat personal access token:
+   ```sh
+   
+   #1. Klik profile anda pada pojok kanan atas GitHub
+   #2. Pilih menu settings
+   #3. Scroll ke bagian bawah dan pilih menu Dveloper settings
+   #4. Pilih Prsonal access tokens
+   #5. Pilih Generate new tokes
+   #6. Tuliskan note untuk token anda (ex: Token for LAB-WEB-13-2026)
+   #7. Atur waktu expiration token anda (sesuai keinginan anda)
+   #8. Pada select scope, ceklis box repo
+   #9. Klik generate new token
+   #10. Pastikan untuk meng-copy token anda dan menyimpannya, karena token hanya bisa diliat sekali (*Jika hilang, buat token baru)
+
+   ```
+   
+9. Masuk ke akun GitHub anda, dan buka repo yang telah anda **fork** dan **clone**. Lihat perubahan yang terjadi pada repo tersebut dan pastikan bahwa tugas yang
+   telah anda **push** sesuai dan berada pada repo tersebut.
+   
+10. Pilih menu **Pull request** dan lakukan **pull request** pada tugas praktikum anda.
